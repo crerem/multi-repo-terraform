@@ -5,11 +5,12 @@ terraform {
     // use this when working with with Terraform cloud  
     cloud {
         organization = "curlycloud"
+        workspaces{
+            name = "multi-repo-root"
+        }
     }
 
-    workspaces{
-        name = "multi-repo-root"
-    }
+ 
 
 
     required_providers {
