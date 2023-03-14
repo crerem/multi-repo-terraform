@@ -1,7 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
 terraform {
-
-
-
     // use this when working with with Terraform cloud  
     cloud {
         organization = "curlycloud"
@@ -9,10 +9,6 @@ terraform {
             name = "multi-repo-root"
         }
     }
-
- 
-
-
     required_providers {
         aws = {
         source  = "hashicorp/aws"
